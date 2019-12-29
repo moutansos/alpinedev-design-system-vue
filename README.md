@@ -1,4 +1,6 @@
-# alpine-design-system-vue
+# @alpinedev/design-system-vue
+
+This is the AlpineDev design system. It will be used with all AlpineDev applications. This library will include multiple components needed to build full applications.
 
 ## Project setup
 ```
