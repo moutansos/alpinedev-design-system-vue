@@ -25,7 +25,8 @@ steps:
     git config --global user.email "moutansos.apps@gmail.com"
     git config --global user.name "Build Pipeline"
     npm version patch -m "Bump version to %s [skip ci]" --force
-    git push
+    git push origin HEAD:master
+
 
 - task: Npm@1
   inputs:
