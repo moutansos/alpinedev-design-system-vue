@@ -1,12 +1,15 @@
 {
   "name": "@alpinedev/design-system-vue",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build-lib": "vue-cli-service build --target lib --name alpinedev-design-system-vue src/lib-main.js"
+    "build-lib": "vue-cli-service build --target lib --name alpinedev-design-system-vue src/lib-main.js",
+    "cut-release-patch": "npm version patch",
+    "cut-release-minor": "npm version minor",
+    "cut-release-major": "npm version major"
   },
   "dependencies": {
     "core-js": "^3.4.4",
@@ -24,5 +27,6 @@
     "prettier": "^1.19.1",
     "vue-template-compiler": "^2.6.10"
   },
-  "main": "./dist/alpinedev-design-system-vue.common.js"
+  "main": "./dist/alpinedev-design-system-vue.common.js",
+  "repository": "https://github.com/moutansos/alpinedev-design-system-vue"
 }
