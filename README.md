@@ -7,7 +7,7 @@ This is the AlpineDev design system. It will be used with all AlpineDev applicat
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compiles and hot-reloads for example site development
 ```
 npm run serve
 ```
@@ -26,6 +26,3 @@ npm run build-lib
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
