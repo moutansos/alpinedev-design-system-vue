@@ -19,8 +19,8 @@ steps:
 - script: |
     npm install
     npm run build-lib
-    npm publish --access public
-- task: NodeTool@0
+
+- task: Npm@1
   inputs:
-    versionSpec: '10.x'
-  displayName: 'npm install and build'
+    command: 'publish'
+    publishEndpoint: 'NPM for moutansos'
