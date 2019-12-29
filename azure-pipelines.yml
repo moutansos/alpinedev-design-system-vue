@@ -10,6 +10,9 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+- checkout: self
+  persistCredentials: true
+
 - task: NodeTool@0
   inputs:
     versionSpec: '10.x'
@@ -19,6 +22,8 @@ steps:
     npm install
     npm run build-lib
     npm version patch -m "Bump version to %s [skip ci]" --force
+    git config --global user.email "moutansos.apps@gmail.com"
+    git config --global user.name "Build Pipeline"
     git push
 
 - task: Npm@1
