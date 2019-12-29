@@ -4,7 +4,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
-- refs/tags/*
+- master
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -18,6 +18,8 @@ steps:
 - script: |
     npm install
     npm run build-lib
+    npm version patch -m "Bump version to %s [skip ci]" --force
+    git push
 
 - task: Npm@1
   inputs:
