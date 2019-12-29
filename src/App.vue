@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h1>The AlpineDev Design System</h1>
-    <h3>The Toggle Switch: </h3>
+    <h3>The Toggle Switch:</h3>
     <ToggleSwitch />
   </div>
 </template>
