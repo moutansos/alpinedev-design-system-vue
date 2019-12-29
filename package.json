@@ -1,6 +1,6 @@
 {
   "name": "@alpinedev/design-system-vue",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -29,5 +29,7 @@
   },
   "main": "./dist/alpinedev-design-system-vue.common.js",
   "repository": "https://github.com/moutansos/alpinedev-design-system-vue",
-  "files": ["./dist/**"]
+  "files": [
+    "./dist/**"
+  ]
 }
