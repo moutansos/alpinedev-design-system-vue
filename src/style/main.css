@@ -1,0 +1,5 @@
+body {
+    --primary-color: cyan;
+    --background: grey;
+    background-color: var(--background);
+}
