@@ -1,6 +1,6 @@
 {
   "name": "@alpinedev/design-system-vue",
-  "version": "0.0.77",
+  "version": "0.0.78",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
